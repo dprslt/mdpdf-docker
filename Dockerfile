@@ -1,6 +1,7 @@
 FROM mkenney/npm:node-7-debian
 
-CMD /bin/sh
+ENTRYPOINT ["/bin/sh","-c"]
+CMD []
 
 RUN mkdir /data
 WORKDIR /data
