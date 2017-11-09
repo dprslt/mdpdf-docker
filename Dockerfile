@@ -1,9 +1,9 @@
 FROM mkenney/npm:node-7-debian
 
-ENTRYPOINT ["/bin/sh","-c"]
-CMD []
+RUN npm install -g mdpdf
 
 RUN mkdir /data
 WORKDIR /data
 
-RUN npm install -g mdpdf
+ENTRYPOINT ["/bin/sh","-c"]
+CMD ["/bin/sh"]
